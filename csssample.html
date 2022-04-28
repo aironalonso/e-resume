@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>CSS Examples</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background-image: url(../images/background.png); background-repeat: no-repeat; background-position: center; background-attachment: fixed;
+            }
+            h2{
+                background-color: yellow;
+            }
+            h3{
+                background-color: white;
+            }
+            p{
+                background-color: lightblue;
+            }
+            table{
+                background-color: lightpink; border: 10px dotted tomato;
+            }
+            /* Class Selectors */
+            .col1{
+                background-color: fuchsia;
+            }
+            .col2{
+                background-color: yellowgreen;
+            }
+            #col3{
+                background-color: lightgray;
+            }
+            .indigo{
+                color: indigo;
+            }
+            p.standard{
+                direction: ltr;
+            }
+            p.reverse{
+                direction: rtl;
+            }
+            p.big_space{
+                letter-spacing: 5px;
+            }
+            h2.lowercase{
+                text-transform: lowercase;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-style: italic;
+            }
+            h2.uppercase{
+                text-transform: uppercase;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            h2.capitalize{
+                text-transform: capitalize;
+                word-spacing: 10px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 40px;
+            }
+            .square{
+                list-style: square;
+                color: brown;
+            }
+            .circle{
+                list-style: circle;
+                color: goldenrod;
+            }
+            .disc{
+                list-style: disc;
+                color: chocolate;
+            }
+            .img{
+                list-style-image: url(../images/checked.png);
+            }
+            .l_alpha{
+                list-style: upper-roman;
+                color: tomato;
+            }
+            ol li::marker{
+                color: hotpink;
+            }
+            .solid_border{
+                border-left: 20px solid green;
+                border-right: 20px solid green;
+                border-top: 20px solid green;
+                border-bottom: 20px solid green;
+            }
+            .border_left{
+                border-left: 5px solid black;
+                padding-left: 20px;
+            }
+            .triangle{
+                width: 0;
+                height: 0;
+                border: 100px solid transparent;
+                border-right: 0;
+                border-left: 200px solid red;
+            }
+            .margin_left{
+                margin-left: 30px;
+                border: 3px solid tomato;
+                padding: 10px;
+                height: 100px;
+            }
+            img{
+                height: 100px;
+                width: 100px;
+                padding: 10px;
+                float: left;
+            }
+        </style>
+    </head>
+        <body>
+            <h1>CSS Margin</h1>
+            <div class="margin_left">
+                <img src="../images/codm logo.png" alt="check logo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sed, beatae aliquid ea velit odit et, labore placeat dicta quae, maxime alias tempora sequi accusamus quis nisi esse aliquam veritatis.
+            </div>
+
+            <h1>CSS List Examples</h1>
+            <table class="solid_border">
+                <tr>
+                    <td class="col1">This table has</td>
+                    <td id="col3">a Lightpink background</td>
+                </tr>
+                <tr>
+                    <td class="col2">To set the background color</td>
+                    <td>use property background background color</td>
+                </tr>
+            </table>
+            <p class="border_left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, magnam nobis doloremque mollitia expedita debitis voluptatum error quod autem voluptatem neque doloribus incidunt esse eaque aperiam reiciendis? Et, nulla neque?</p>
+            
+            <!-- How to create a Triangle -->
+            <div class="triangle">
+                
+            </div>
+
+            <ul class="img">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+            <ol class="l_alpha">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ol>
+
+            <h1>CSS Text Examples</h1>
+            <p class="indigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laboriosam quia non saepe expedita consequuntur. Nihil possimus nemo libero rem quod atque, iusto itaque ducimus! Consequuntur voluptates accusantium nam ipsa?</p>
+            <h2 style="text-decoration: line-through;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia ab quo molestiae id aut saepe eveniet in laborum quae, dolor nam quia alias architecto nemo numquam ipsa vitae placeat?</h2>
+            <h3 style="text-decoration: underline;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam nisi eaque perspiciatis natus corporis aperiam hic. Beatae dolores labore doloremque, ullam, dolor deserunt distinctio aliquid facilis atque fuga sit asperiores?</h3>
+            <h3 style="text-decoration: overline;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos ducimus asperiores ex doloremque dicta, pariatur qui ipsam, quibusdam beatae quia earum recusandae similique laborum fugiat fuga eveniet quo dolorem.</h3>
+            <a href="#" style="text-decoration: none;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum id facere vero eaque consectetur aliquam eos minima impedit dignissimos in ad nam ab repellendus, rem, repudiandae assumenda vel accusamus nobis?</a>
+            <p class="standard">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe consequuntur quidem itaque architecto adipisci dolorem quisquam. Placeat molestias dicta, magnam, eaque nisi pariatur veritatis, cupiditate quisquam repellat consequatur ipsa quaerat!</p>
+            <p class="reverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eius aperiam dolores quasi fugiat? Illo cum error veniam, ab officia est. Porro animi molestias aliquam ipsam earum eaque sequi. Natus?</p>
+            <p class="big_space">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quae vitae omnis distinctio dolores delectus obcaecati incidunt asperiores consequatur dignissimos! Asperiores, harum! Exercitationem obcaecati recusandae delectus impedit voluptatibus officia earum.</p>
+            <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet quos suscipit velit similique alias exercitationem odit voluptate ad in obcaecati labore, mollitia doloribus natus aliquam enim expedita eius officiis.</p>
+            <p style="text-align: right;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet quos suscipit velit similique alias exercitationem odit voluptate ad in obcaecati labore, mollitia doloribus natus aliquam enim expedita eius officiis.</p>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet quos suscipit velit similique alias exercitationem odit voluptate ad in obcaecati labore, mollitia doloribus natus aliquam enim expedita eius officiis.</p>
+            <h2 class="lowercase">LOREM IPSUM</h2>
+            <h2 class="uppercase">lorem ipsum</h2>
+            <h2 class="capitalize">lorem ipsum</h2>
+
+            <h1>CSS Background Examples</h1>
+            <h2>This Heading has a Yellow background</h2>
+            <h3>This Heading has a White backgroung</h3>
+            <p>This is a Paragraph with Lightblue background</p>
+
+            <table>
+                <tr>
+                    <td class="col1">This table has</td>
+                    <td id="col3">a Lightpink background</td>
+                </tr>
+                <tr>
+                    <td class="col2">To set the background color</td>
+                    <td>use property background background color</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Cricket Preview<br>
+                        <audio src="crickets.mp3" controls>Your browser does not support the audio element</audio></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Planet Video<br>
+                        <video src="../Day04/planet.mp4" controls autoplay muted>Your browser does not support the video element</video>
+                    </td>
+                </tr>
+            </table>
+        </body>
+</html>
