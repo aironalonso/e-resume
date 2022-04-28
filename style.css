@@ -143,11 +143,14 @@ h3 {
         display: block;
     }
 
+    .r-img-left-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
     .resume-img-left {
         border-radius: 50%;
-        display: block;
         height: 160px;
-        margin-left: 90px;
         object-fit: cover;
         width: 160px;
     }
